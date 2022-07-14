@@ -68,26 +68,14 @@ function draw() {
 
 
 //ESCOLHA A FUNÇÃO DE READHEIGHT CORRETA
-// function readHeight(data){
-//   balloon.x = height.x;
-//   balloon.y = height.y;
-// }
 
-// function readHeight(data){
-//   height = data.val();
-//   balloon.x = height.x;
-//   balloon.y = height.y;
-// }
-
-// function readHeight(data){
-//   height = data.val();
-// }
-
- function readHeight(){
-   height = val();
+ function readHeight(data){
+   height = data.val();
    balloon.x = height.x;
    balloon.y = height.y;
  }
+
+
 
 function showError(){
   console.log("Erro ao escrever no banco de dados");
